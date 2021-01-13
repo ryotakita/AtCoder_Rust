@@ -1,0 +1,14 @@
+[package]
+name = "ABC135"
+version = "0.1.0"
+authors = ["ryota-kita <ryota-kita@kke.co.jp>"]
+edition = "2018"
+
+# dependencies added to new project
+[dependencies]
+proconio = "*"
+competitive = { git = "https://github.com/tanakh/competitive-rs.git" }
+
+[profile.release]
+lto = true
+panic = 'abort'
